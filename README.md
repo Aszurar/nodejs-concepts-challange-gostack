@@ -46,21 +46,21 @@ ___
 ## :interrobang: Motivo
 
 Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, como: 
-  1. O uso do framework express
-    - Iniciação da aplicação/serivdor.
-    - Auxilia na criação de rotas os métodos http: post, get, patch, put e delete.
-  2. Configuração e iniciação do Package.json
-  3. Prática no uso dos HTTP Codes e HTTP Methods
-  4. Estrutura inicial de um servidor simples com express.
+  1. O uso do framework express:
+     - Iniciação da aplicação/serivdor.
+     - Auxilia na criação de rotas os métodos http: post, get, patch, put e delete.
+  3. Configuração e iniciação do Package.json
+  4. Prática no uso dos HTTP Codes e HTTP Methods
+  5. Estrutura inicial de um servidor simples com express.
      - Uso de Json no express
      - Recarregando automaticamente o servidor quando houver alterações no código.
      - Esturtura incial de pastas
-  5. Transferência de dados entre a requisição/rotas:
+  6. Transferência de dados entre a requisição/rotas:
      - Uso dos parâmetros de rotas: params e query. 
      - Uso do parâmetro de Headers
      - Uso do Request Body
-  6. Uso do Insomnia
-  7. Entedimento básico sobre Regras de negócio
+  7. Uso do Insomnia
+  8. Entedimento básico sobre Regras de negócio
      -  Prática de lógica de programação
      -  Prática e uso de métodos padrões javascript como: 
         -  find()
@@ -69,8 +69,8 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
         -  reduce()
         -  indexOf()
         -  splice()  
-  8. Geração de ids com o uuid
-  9. Criação e uso de Middlewares
+  9. Geração de ids com o uuid
+  10. Criação e uso de Middlewares
      - Uso do método next()
      - Entendimento mais profundo sobre Request e Response
 
@@ -78,19 +78,19 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
 <img src="" width="1000">
 - Funcionalidades:
 
-    1. POST /repositories: 
-        - A rota deve receber title, url e techs dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: { id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
+  1. POST /repositories: 
+      - A rota deve receber title, url e techs dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: { id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
 
-    2. GET /repositories: 
-         - Rota que lista todos os repositórios;
-   
-    3. PUT /repositories/:id: 
-         - A rota que altera apenas o title, a url e as techs do repositório que possua o id igual ao id presente nos parâmetros da rota;
+  2. GET /repositories: 
+       - Rota que lista todos os repositórios;
+ 
+  3. PUT /repositories/:id: 
+       - A rota que altera apenas o title, a url e as techs do repositório que possua o id igual ao id presente nos parâmetros da rota;
 
-    4. DELETE /repositories/:id: 
-        - A rota que deleta o repositório com o id presente nos parâmetros da rota;
-    5. POST /repositories/:id/like: 
-        - A rota deve aumentar o número de likes do repositório específico escolhido através do id presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
+  4. DELETE /repositories/:id: 
+      - A rota que deleta o repositório com o id presente nos parâmetros da rota;
+  5. POST /repositories/:id/like: 
+      - A rota deve aumentar o número de likes do repositório específico escolhido através do id presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
 
 1. Código:
      - É tentando **manter o padrão que é ensinado na Rocketseat** para o código mais limpo, organizado de facil entendimento com sua estrutura de pastas também.
