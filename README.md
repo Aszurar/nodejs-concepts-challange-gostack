@@ -35,6 +35,16 @@ ___
   3. atualização 
   4. Remoção dos repositórios
 - Além disso.  permitirá que os repositórios possam receber "likes".
+ 
+- Estrutura  
+  1. Código:
+     - É tentando **manter o padrão que é ensinado na Rocketseat** para o código mais limpo, organizado de facil entendimento com sua estrutura de pastas também.
+       - Todo código foi **feito com JavaScript**.
+  2. Express:
+       - Toda criação, inicialização e funcionalidades do projeto foi feito usando o express.
+  3. NodeJS
+       - Foi cronstruído de forma simples uma aplicação para resgatar os conceitos de Node em conjunto com de uma API Rest.
+       - Foi usado o yarn como gerenciador de pacotes.
 * **Home**:
 
 <div align="center" >
@@ -91,15 +101,6 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
       - A rota que deleta o repositório com o id presente nos parâmetros da rota;
   5. POST /repositories/:id/like: 
       - A rota deve aumentar o número de likes do repositório específico escolhido através do id presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
-
-1. Código:
-     - É tentando **manter o padrão que é ensinado na Rocketseat** para o código mais limpo, organizado de facil entendimento com sua estrutura de pastas também.
-     - Todo código foi **feito com JavaScript**.
-2. Express:
-     - Toda criação, inicialização e funcionalidades do projeto foi feito usando o express.
-3. NodeJS
-     - Foi cronstruído de forma simples uma aplicação para resgatar os conceitos de Node em conjunto com de uma API Rest.
-     - Foi usado o yarn como gerenciador de pacotes.
 ## :seedling: Requisitos Mínimos
 
 - NodeJS
