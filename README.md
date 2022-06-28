@@ -84,7 +84,7 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
      - Uso do método next()
      - Entendimento mais profundo sobre Request e Response
 
-1. **Funcionalidades**
+ **Funcionalidades**
 
   0. Middleware: validadeId
       - Verifica se o id passado é válido.
@@ -110,7 +110,7 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
     <img src="https://i.imgur.com/4VXma7n.png" width="800">
   5. POST /repositories/:id/like: 
       - A rota deve aumentar o número de likes do repositório específico escolhido através do id presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
-    <    <img src="https://i.imgur.com/lac9QgZ.png" width="80">
+    <img src="https://i.imgur.com/lac9QgZ.png" width="800">
 >
 ## :seedling: Requisitos Mínimos
 
