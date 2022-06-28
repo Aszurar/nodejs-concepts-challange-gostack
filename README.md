@@ -20,7 +20,7 @@
 ___
 
 <div align="center" >
-    <img src="" width="250">____<img src="" width=250>
+    <img src="" width="1000">
 </div>
 
 
@@ -45,10 +45,10 @@ ___
   3. NodeJS
        - Foi cronstruído de forma simples uma aplicação para resgatar os conceitos de Node em conjunto com de uma API Rest.
        - Foi usado o yarn como gerenciador de pacotes.
-* **Home**:
+* **Arquivo principal**:
 
 <div align="center" >
-  <img src="" width="250">____<img src="" width=250>____<img src="" width="250">
+    <img src="https://i.imgur.com/E6D9p1S.png" width="800">
 </div>
 
 ___
@@ -84,23 +84,34 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
      - Uso do método next()
      - Entendimento mais profundo sobre Request e Response
 
-1. **Server.ts**
-<img src="" width="1000">
-- Funcionalidades:
+1. **Funcionalidades**
+
+  0. Middleware: validadeId
+      - Verifica se o id passado é válido.
+    <img src="https://i.imgur.com/sO9QbT1.png" width="800">
+   
 
   1. POST /repositories: 
       - A rota deve receber title, url e techs dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: { id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
+    <img src="https://i.imgur.com/x857IHm.png" width="800">
+ 
 
   2. GET /repositories: 
        - Rota que lista todos os repositórios;
+    <img src="https://i.imgur.com/ksol16F.png" width="800">
+
  
   3. PUT /repositories/:id: 
        - A rota que altera apenas o title, a url e as techs do repositório que possua o id igual ao id presente nos parâmetros da rota;
+    <img src="https://i.imgur.com/vfCLWNz.png" width="800">
 
   4. DELETE /repositories/:id: 
       - A rota que deleta o repositório com o id presente nos parâmetros da rota;
+    <img src="https://i.imgur.com/4VXma7n.png" width="800">
   5. POST /repositories/:id/like: 
       - A rota deve aumentar o número de likes do repositório específico escolhido através do id presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
+    <    <img src="https://i.imgur.com/lac9QgZ.png" width="80">
+>
 ## :seedling: Requisitos Mínimos
 
 - NodeJS
