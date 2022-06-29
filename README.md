@@ -20,11 +20,14 @@
 ___
 
 <div align="center" >
-    <img src="" width="1000">
+  <img src="https://i.imgur.com/kxsPDgP.gif" width="400">____<img src="https://i.imgur.com/kxsPDgP.gif" width="400">
+</div>
+<div align="center" >
+  <img src="https://i.imgur.com/RwkgnR0.gif" width="400">____<img src="https://i.imgur.com/E7qq0iw.gif" width="400">
 </div>
 
 
-- [**Link do vídeo completo sobre o projeto**]()
+- [**Link do vídeo completo sobre o projeto**](https://www.youtube.com/watch?v=4hPehnLnzAU)
 ___
 
 ## :information_source: Sobre
