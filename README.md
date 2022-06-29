@@ -114,7 +114,7 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
 ___
 ## :art: Documentação
 
-- Após executar a aplicação basta acessar a o endereço: 
+- Após executar a aplicação basta acessar o endereço: 
   <a href="http://localhost:3333/api-docs/" target="_blank">http://localhost:3333/api-docs/</a>
 
 [<h2 align="center">Nodejs Concepts Challange - Swagger</h2>](http://localhost:3333/api-docs/)
