@@ -111,7 +111,16 @@ Com esse projeto foi posto em prática de vários conceitos iniciais de NodeJS, 
   5. POST /repositories/:id/like: 
       - A rota deve aumentar o número de likes do repositório específico escolhido através do id presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
     <img src="https://i.imgur.com/lac9QgZ.png" width="800">
->
+___
+## :art: Documentação
+
+- Após executar a aplicação basta acessar a o endereço: 
+  <a href="http://localhost:3333/api-docs/">http://localhost:3333/api-docs/</a>
+  
+[<h2 align="center">Nodejs Concepts Challange - Swagger</h2>](https://i.imgur.com/hcgdd64.png)
+<img src="https://i.imgur.com/R42UA5p.png" width="900">
+
+___
 ## :seedling: Requisitos Mínimos
 
 - NodeJS

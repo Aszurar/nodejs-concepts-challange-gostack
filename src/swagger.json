@@ -1,0 +1,222 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Github Explorer API",
+        "description": "This is a github explorer API documentation",
+        "version": "1.0.0",
+        "contact": {
+            "name": "Github Explorer Repository",
+            "email": "lms.souza39@gmail.com",
+            "url": "https://github.com/Aszurar/nodejs-concepts-challange-gostack"
+        }
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3333",
+            "descripiton": "Local Server"
+        }
+    ],
+    "paths": {
+        "/repositories": {
+            "get": {
+                "tags": [
+                    "Repository"
+                ],
+                "summary": "List all repositories",
+                "description": "List all repositories",
+                "operationId": "listRepositories",
+                "responses": {
+                    "200": {
+                        "description": "A list of repositories",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                    "title": {
+                                                        "type": "string"
+                                                    },
+                                                    "url": {
+                                                        "type": "string"
+                                                    },
+                                                    "techs": {
+                                                        "type": "string"
+                                                    }				
+                                                }	
+                                        },
+                                    "example": {
+                                        "repositories": [
+                                            {
+                                                "id": "ef7b5598-e4a2-432a-95d1-dc3b0b23a08a",
+                                                "title": "name of repository 1",
+                                                "url": "description of repository 1",
+                                                "techs": "React-Native, JavaScript e Android Studio"
+                                            },
+                                            
+                                            {
+                                                "id": "ef7b5598-e4a2-432a-95d1-dc3b0b23a08a",
+                                                "title": "name of repository 2",
+                                                "url": "description of repository 2",
+                                                "techs": "ReactJS e React Native"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Repository"
+                ],
+                "summary": "Create a new repository",
+                "description": "Create a new repository",
+                "operationId": "createRepository",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    },
+                                    "techs": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "title": "repository 3",
+                                    "url": "description of repository 3",
+                                    "techs": "ReactJS, React Native e Node"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Repository created"
+                    }
+                   
+                }
+            }
+        },
+        "/repositories/{id}": {
+            "put": {
+                "tags": [
+                    "Repository"
+                ],
+                "summary": "Update a repository by repository ID",
+                "description": "Update a repository",
+                "operationId": "updateRepository",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id", 
+                        "description": "Repository ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+
+                        "style": "simple"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    },
+                                    "techs": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "title": "repository 4",
+                                    "url": "description of repository 4",
+                                    "techs": "C++, Java e C#"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Repository updated"
+                    }
+                   
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Repository"
+                ],
+                "summary": "Delete a repository by repository ID",
+                "description": "Delete a repository",
+                "operationId": "deleteRepository",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id", 
+                        "description": "Repository ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+
+                        "style": "simple"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Not content: Repository deleted"
+                    }
+                   
+                }
+            }
+        },
+        "/repositories/{id}/like": {
+            "post": {
+                "tags": [
+                    "Repository"
+                ],
+                "summary": "Like a repository by repository ID",
+                "description": "Like a repository",
+                "operationId": "likeRepository",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id", 
+                        "description": "Repository ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+
+                        "style": "simple"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Repository liked"
+                    }
+                }
+            }
+        }
+		}
+}

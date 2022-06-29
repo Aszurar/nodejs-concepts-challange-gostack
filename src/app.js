@@ -1,4 +1,6 @@
 const express = require("express");
+const swaggerUi = require("swagger-ui-express");
+const swaggerFile = require("./swagger.json");
 const cors = require("cors");
 
 const { v4: uuid, validate: isUuid } = require('uuid');
@@ -18,9 +20,9 @@ function validateId(request, res, next) {
   return next();
 }
 
-app.get("/repositories", (request, response) => {
+app.get("/repositories", (_request, response) => {
   // TODO
-  return response.json(repositories);
+  return response.json({repositories});
 });
 
 app.post("/repositories", (request, response) => {
@@ -75,5 +77,8 @@ app.post("/repositories/:id/like", validateId,(request, response) => {
   repository.likes++;
   return response.status(200).json(repository);
 });
+
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 module.exports = app;
