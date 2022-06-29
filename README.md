@@ -1,6 +1,7 @@
 # Desafio de Conceitos de Nodejs | GoStack
 
 - Nesse desafio, criamos uma aplicação para treinar os conceitos iniciais de NodeJS como rotas, middlewares, servidores, etc.
+- Esse é o 1º desafio de NodeJS voltado para o back-end do bootcamp GoStack da Rocketseat.
 - O Node é uma plataforma open-source que permite a execução da lingaugem javascript no lado do servidor/back-end.
   - Composto por:
   - v8: Interpretador de JavaScript, criado pela Google para executar o Chrome, tornando-o muito mais rápido e eficiente e que permite a execução de código javascript no back-end.
