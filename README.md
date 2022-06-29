@@ -11,7 +11,7 @@
 <h3 align="center">
   <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
   <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
-  <a href="#art-design">Design</a>&nbsp;|&nbsp;
+  <a href="#art-documentação">Documentação</a>&nbsp;|&nbsp;
   <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
   <a href="#rocket-principais-tecnologias-utilizadas">Tecnologias</a>&nbsp;|&nbsp;
   <a href="#package-como-baixar-e-executar-o-projeto">Baixar e Executar</a>&nbsp;
