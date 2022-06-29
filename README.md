@@ -115,10 +115,10 @@ ___
 ## :art: Documentação
 
 - Após executar a aplicação basta acessar a o endereço: 
-  <a href="http://localhost:3333/api-docs/">http://localhost:3333/api-docs/</a>
-  
-[<h2 align="center">Nodejs Concepts Challange - Swagger</h2>](https://i.imgur.com/hcgdd64.png)
-<img src="https://i.imgur.com/R42UA5p.png" width="900">
+  <a href="http://localhost:3333/api-docs/" target="_blank">http://localhost:3333/api-docs/</a>
+
+[<h2 align="center">Nodejs Concepts Challange - Swagger</h2>](http://localhost:3333/api-docs/)
+<img src="https://i.imgur.com/hcgdd64.png" width="900">
 
 ___
 ## :seedling: Requisitos Mínimos
