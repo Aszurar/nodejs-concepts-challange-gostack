@@ -22,7 +22,7 @@ function validateId(request, res, next) {
 
 app.get("/repositories", (_request, response) => {
   // TODO
-  return response.json({repositories});
+  return response.json(repositories);
 });
 
 app.post("/repositories", (request, response) => {
